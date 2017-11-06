@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center">
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/choose_from_camera"
+        android:padding="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="20dp"
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/choose_from_camera"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/choose_from_album"
+        android:padding="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:scaleType="fitCenter"
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/choose_from_album"/>
+
+</LinearLayout>

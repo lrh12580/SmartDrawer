@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/history_parent_layout"
+              android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:alpha="0.15"
+            android:background="@color/colorPrimary"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/time_line_circle"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/history_parent_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0.87"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="26"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/history_parent_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/black"
+        android:alpha="0.27"
+        tools:text="09/16"/>
+
+    <TextView
+        android:id="@+id/history_parent_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:alpha="0.54"
+        tools:text="20 条记录"/>
+
+</FrameLayout>

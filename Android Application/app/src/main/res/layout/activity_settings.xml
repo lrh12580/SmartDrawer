@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginBottom="10dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_settings_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <GridLayout
+        android:id="@+id/activity_settings_addr"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:layout_margin="2dp"
+        android:columnCount="2"
+        android:rowCount="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="连接设置"/>
+        <TextView
+            android:id="@+id/activity_settings_addr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:layout_gravity="right|center_vertical"
+            tools:text="192.168.1.221:21567"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="需要服务器IP和端口号"/>
+    </GridLayout>
+
+
+    <GridLayout
+        android:id="@+id/activity_settings_sync"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:layout_margin="2dp"
+        android:rowCount="2"
+        android:columnCount="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="left|center"
+            android:paddingTop="5dp"
+            android:textSize="18sp"
+            android:text="后台同步服务"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/activity_settings_sync_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_rowSpan="2"
+            android:layout_gravity="right|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="开启后将不定期更新数据库"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/activity_settings_smart_alert"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:layout_margin="2dp"
+        android:rowCount="2"
+        android:columnCount="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="left|center"
+            android:paddingTop="5dp"
+            android:textSize="18sp"
+            android:text="智能提示服务"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/activity_settings_smart_alert_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_rowSpan="2"
+            android:layout_gravity="right|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="开启智能提示服务"/>
+
+    </GridLayout>
+
+
+
+</LinearLayout>

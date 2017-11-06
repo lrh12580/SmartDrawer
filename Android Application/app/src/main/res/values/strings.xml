@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SmartDrawer</string>
+    <string name="description_content_cover">封面</string>
+    <string name="history_parent_day">%1$d</string>
+    <string name="history_parent_date">%1$d/%2$d</string>
+    <string name="history_parent_title">%1$d 条记录</string>
+    <string name="history_child_time">%1$d:%2$d</string>
+    <string name="menu_modify">修改物品信息</string>
+    <string name="alart_dialog_modify">请设置名称和类别</string>
+    <string name="content_take_photo">更换照片</string>
+    <string name="content_name">名称</string>
+    <string name="content_category">类别</string>
+    <string name="error_blank">不能为空！</string>
+    <string name="history_text">历史记录</string>
+    <string name="transition_cover">transition_cover</string>
+    <string name="transition_layout">transition_layout</string>
+
+    <string name="camera_pop_camera">使用相机拍摄</string>
+    <string name="camera_pop_album">从相册选取</string>
+    <string name="cancel">取消</string>
+
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+
+</resources>

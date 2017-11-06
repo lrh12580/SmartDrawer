@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/content_menu_photo"
+        android:icon="@drawable/camera"
+        android:title="@string/content_take_photo"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/content_menu_modify"
+        android:icon="@drawable/modify"
+        android:title="@string/menu_modify"
+        app:showAsAction="ifRoom"/>
+</menu>

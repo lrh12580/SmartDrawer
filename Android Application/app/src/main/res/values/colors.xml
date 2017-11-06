@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cc9600</color>
+    <color name="colorPrimaryDark">#b38300</color>
+    <color name="colorAccent">#e5c700</color>
+
+
+    <color name="colorBackground">#fffdee</color>
+    <color name="colorMask">#80cc9600</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#50000000</color>
+    <color name="time_line_line">#E8EAF6</color>
+    <color name="time_line_circle_day">#5C6BC0</color>
+    <color name="time_line_circle_dot">#9FA8DA</color>
+    <color name="time_line_text_primary">#FFFFFF</color>
+    <color name="time_line_text_extra">#BDBDBD</color>
+
+    <color name="camera_pop_normal">#5DB8FE</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#E0E0E0</color>
+    <color name="red">#F44336</color>
+    <color name="pink">#FF4081</color>
+    <color name="orange">#FDC68C</color>
+</resources>

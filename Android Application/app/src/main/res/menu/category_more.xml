@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popup_category_name"
+        android:title="修改名称"/>
+
+    <item
+        android:id="@+id/popup_category_change"
+        android:title="修改所有物品到其他类别"/>
+
+    <item
+        android:id="@+id/popup_category_delete"
+        android:title="删除此类别"/>
+</menu>

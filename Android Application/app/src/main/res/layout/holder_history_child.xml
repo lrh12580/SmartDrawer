@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:alpha="0.15"
+            android:background="@color/colorPrimary"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/time_line_circle"
+            android:alpha="0.54"
+            android:tint="@color/colorPrimary"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/history_child_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:alpha="0.54"
+        tools:text="10:58"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_child_option"
+        android:layout_gravity="center"
+        tools:text="options"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_child_name"
+        android:layout_gravity="right|center_vertical"
+        android:textColor="@color/black"
+        android:alpha="0.27"
+        android:layout_marginRight="20dp"
+        tools:text="55"/>
+
+</FrameLayout>

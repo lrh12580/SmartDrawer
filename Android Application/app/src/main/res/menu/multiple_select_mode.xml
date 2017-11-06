@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/multi_select_change_category"
+          android:icon="@drawable/modify"
+          android:title="更改类型"
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/multi_select_set_alarm"
+          android:icon="@drawable/clock"
+          android:title="设置提醒"
+          app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.isaac.smartdrawer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".SyncService"
+            android:exported="false">
+        </service>
+
+        <receiver android:name=".StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ContentPagerActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".ContentListPagerActivity"/>
+        <activity android:name=".ContentListPagerActivity"/>
+        <activity
+            android:name=".ContentSearchActivity"
+            android:parentActivityName=".ContentListPagerActivity"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".ContentListPagerActivity"/>
+        <activity
+            android:name=".CategoryManagerActivity"
+            android:parentActivityName=".ContentListPagerActivity"/>
+        <service android:name=".AlarmService"
+                 android:exported="false"/>
+        <activity android:name=".CircleChartActivity"/>
+        <activity android:name=".PieChartViewActivity"/>
+        <activity android:name=".SplineChartViewActivity"/>
+        <activity android:name=".AlarmManagerActivity"
+                  android:parentActivityName=".ContentListPagerActivity"/>
+        <activity android:name=".HistoryActivity"
+                  android:parentActivityName=".ContentListPagerActivity"/>
+
+    </application>
+
+</manifest>

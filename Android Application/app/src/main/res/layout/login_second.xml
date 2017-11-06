@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/lamp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/blue_lamp"
+        android:background="@null"
+        android:layout_gravity="center_horizontal"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/mirror"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="100dp"
+        app:srcCompat="@drawable/mirror"
+        android:background="@null"
+        android:layout_gravity="left|center_vertical"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/sofa"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/sofa"
+        android:background="@null"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/bookshelf"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/bookshelf"
+        android:layout_marginBottom="50dp"
+        android:background="@null"
+        android:layout_gravity="right|center_vertical"/>
+
+</FrameLayout>

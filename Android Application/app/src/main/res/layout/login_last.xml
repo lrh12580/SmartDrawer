@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/user_head_portrait"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_user_name"
+        android:hint="请输入用户名"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_server_ip"
+        android:hint="请输入服务器ip"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_server_port"
+        android:hint="请输入服务器端口号"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/user_login"
+        android:textSize="22sp"
+        android:text="登录"/>
+</LinearLayout>
